@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Main CSS
 import './App.css';
 
+// Pages
+import GameLogic from './Pages/GameLogic/gameLogic';
+
+// Functions
+function gamelogic() {
+  return <GameLogic />;
+}
+
+// Main Function
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outer-wrapper">
+      <div className='wrapper'>
+        <Router>
+          <Routes>
+            <Route path='/' element={ gamelogic() } />
+            <Route path='/*' element={ 'Not Found! 404' } />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }
