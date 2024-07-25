@@ -119,7 +119,7 @@ function GameLogic() {
 
     return (
         <div className='tictactoe-wrapper'>
-            <h1>Tic Tac Toe</h1>
+            <h1 className='tictactoe-wrapper-title'>Tic Tac Toe</h1>
 
             <div className='tictactoe-info-wrapper'>
                 {turn ? (

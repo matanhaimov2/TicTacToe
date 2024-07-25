@@ -76,6 +76,10 @@
     justify-content: unset;
   }
 
+  .tictactoe-wrapper-title {
+    margin: 2% !important;
+  }
+
   .tictactoe-info-wrapper {
     flex-direction: column;
     width: 80%;
