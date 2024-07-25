@@ -72,6 +72,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .tictactoe-wrapper {
+    justify-content: unset;
+  }
+
   .tictactoe-info-wrapper {
     flex-direction: column;
     width: 80%;
