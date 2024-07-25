@@ -1,0 +1,72 @@
+.tictactoe-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.tictactoe-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-around;
+}
+
+.tictactoe-who-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+.tictactoe-score {
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+
+.tictactoe-reset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tictactoe-reset-button {
+  padding: 10px 10px;
+  font-size: 100%;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.tictactoe-reset-button:hover {
+  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tictactoe-reset-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .tictactoe-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .tictactoe-info-wrapper {
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 20px;
+  }
+}

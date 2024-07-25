@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// CSS
 import './cube.css';
 
 // React Icons
@@ -12,8 +13,6 @@ class Cube extends Component {
 
         return (
             <div className="cube" id={pos} key={pos} pos={pos} onClick={() => this.props.handleMove(pos)}>
-                <span> {pos} </span>
-
                 {symbol && (
                     <div className={`cube-${symbol === "X" ? "x" : "o"}-symbol-wrapper`}>
                         {symbol === "X" ? (
