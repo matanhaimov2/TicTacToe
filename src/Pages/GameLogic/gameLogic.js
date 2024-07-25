@@ -138,7 +138,9 @@ function GameLogic() {
 
             <Board board={board} handleMove={startPlay} />
 
-            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} onClick={toggleDarkTheme} />
+            <div className='tictactoe-dark-wrapper'>
+                <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} onClick={toggleDarkTheme} />
+            </div>
         </div>
     );
 }
